@@ -1,3 +1,4 @@
+get_prop(miuicamera_app, qemu_hw_prop)
 get_prop(miuicamera_app, vendor_display_type_prop)
 get_prop(miuicamera_app, vendor_us_proximity_prop)
 
