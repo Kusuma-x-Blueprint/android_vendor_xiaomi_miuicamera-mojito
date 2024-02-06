@@ -6,7 +6,7 @@
 
 soong_namespace {
     imports: [
-        "vendor/xiaomi/miuicamera",
+        "vendor/xiaomi/miuicamera-common",
     ],
 }
 
@@ -17,7 +17,7 @@ cc_prebuilt_library_shared {
     },
     target: {
         android_arm64: {
-            srcs: ["prebuilt/libcamera_algoup_jni.xiaomi.so"],
+            srcs: ["proprietary/system_ext/lib64/libcamera_algoup_jni.xiaomi.so"],
         },
     },
     system_ext_specific: true,

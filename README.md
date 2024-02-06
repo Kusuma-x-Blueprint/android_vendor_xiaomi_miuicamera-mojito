@@ -1,21 +1,21 @@
-# MiuiCamera-veux
+# Miui Camera Configuration for Xiaomi POCO X4 Pro 5G / Redmi Note 11 Pro 5G / Redmi Note 11 Pro+ 5G
 
-1. Clone the main MiuiCamera repository to `vendor/xiaomi/miuicamera`
+1. Clone the common Miui Camera repository to `vendor/xiaomi/miuicamera-common`
 2. Clone this repository to `vendor/xiaomi/miuicamera-veux`
 3. Add the line below to `device.mk`
     ```makefile
-    $(call inherit-product, vendor/xiaomi/miuicamera-veux/MiuiCamera-veux.mk)
+    $(call inherit-product, vendor/xiaomi/miuicamera-veux/miuicamera-veux-vendor.mk)
     ```
-4. Include SELinux policy in `BoardConfig.mk`
+4. Add the line below to `BoardConfig.mk`
     ```makefile
-    include vendor/xiaomi/miuicamera-veux/SEPolicy-veux.mk
+    include vendor/xiaomi/miuicamera-veux/BoardConfigVendor.mk
     ```
 
 ## Technical details
 
 `libcamera_algoup_jni.xiaomi.so` was extracted from **V14.0.4.0.TKCMIXM** and patched for **AOSP**:
 ```sh
-patchelf --add-needed "libgui_shim_miuicamera.so" prebuilt/libcamera_algoup_jni.xiaomi.so
+patchelf --add-needed "libgui_shim_miuicamera.so" libcamera_algoup_jni.xiaomi.so
 ```
 When the correct `shared_libs` list is not present in Android.bp, `check_elf_file.py` prints it on build:
 ```

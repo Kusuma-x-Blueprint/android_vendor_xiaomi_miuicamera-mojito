@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, vendor/xiaomi/miuicamera/MiuiCamera.mk)
+$(call inherit-product, vendor/xiaomi/miuicamera-common/miuicamera-common-vendor.mk)
 
 # Native libraries
 PRODUCT_PACKAGES += \
