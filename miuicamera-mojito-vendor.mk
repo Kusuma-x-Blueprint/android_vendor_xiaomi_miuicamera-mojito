@@ -5,6 +5,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/miuicamera-common/miuicamera-common-vendor.mk)
+TARGET_CAMERA_EXTRAPHOTO := true
 
 # Native libraries
 PRODUCT_PACKAGES += \
@@ -17,4 +18,4 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/xiaomi/miuicamera-veux
+    vendor/xiaomi/miuicamera-mojito

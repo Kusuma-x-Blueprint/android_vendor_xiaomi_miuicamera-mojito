@@ -22,10 +22,6 @@ cc_prebuilt_library_shared {
     },
     system_ext_specific: true,
     shared_libs: [
-        "android.hidl.token@1.0-utils",
-        "libandroid",
-        "libandroid_runtime",
-        "libbase",
         "libbinder",
         "libc++",
         "libcamera_client",
@@ -34,11 +30,7 @@ cc_prebuilt_library_shared {
         "libgui",
         "libgui_shim_miuicamera",
         "liblog",
-        "libmedia_jni_utils",
-        "libnativehelper",
-        "libnativewindow",
-        "libui",
         "libutils",
-        "libvndksupport",
+        "libvndksupport"
     ],
 }

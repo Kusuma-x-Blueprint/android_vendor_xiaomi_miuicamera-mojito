@@ -6,4 +6,4 @@
 
 include vendor/xiaomi/miuicamera-common/BoardConfigVendor.mk
 
-BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/miuicamera-veux/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/miuicamera-mojito/sepolicy/vendor
