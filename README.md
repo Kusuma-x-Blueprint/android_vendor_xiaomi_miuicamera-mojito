@@ -13,7 +13,7 @@
 
 ## Technical details
 
-`libcamera_algoup_jni.xiaomi.so` was extracted from **V14.0.8.0.SKGMIXM** and patched for **AOSP**:
+All blobs was was extracted from **V14.0.8.0.SKGMIXM** and `libcamera_algoup_jni.xiaomi.so` was patched for **AOSP**:
 ```sh
 patchelf --add-needed "libgui_shim_miuicamera.so" libcamera_algoup_jni.xiaomi.so
 ```
