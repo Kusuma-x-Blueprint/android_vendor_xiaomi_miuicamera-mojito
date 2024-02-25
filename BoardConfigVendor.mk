@@ -6,6 +6,7 @@
 
 include vendor/xiaomi/miuicamera-common/BoardConfigVendor.mk
 
+BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += vendor/xiaomi/miuicamera-mojito/sepolicy/private
